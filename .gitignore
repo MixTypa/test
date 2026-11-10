@@ -1,0 +1,4 @@
+
+# docker-образ > 100MB (лимит GitHub) — в git не входит, остаётся локально
+9_app/testapp1.01.tar
+**/*.tar

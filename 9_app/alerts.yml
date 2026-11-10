@@ -1,0 +1,10 @@
+groups:
+  - name: webapp
+    rules:
+      - alert: WebAppDown
+        expr: up{job="webapp"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Веб-приложение недоступно больше минуты"
